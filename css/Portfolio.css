@@ -11,7 +11,7 @@
 
 body{scroll-behavior: smooth;}
 
-body, .SkillBox, .Footer{
+body{
     background: url(../img/home.jpg) no-repeat; background-size: cover;
     background-position: center center; background-attachment: fixed;}
 
