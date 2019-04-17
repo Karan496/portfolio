@@ -14,7 +14,7 @@ body{scroll-behavior: smooth;}
 body{
     background: url(../img/home.jpg) no-repeat; background-size: cover;
     background-position: center center; background-attachment: fixed;
- background-attachment: fixed-webkit-;
+    background-attachment: fixed-webkit-;
     background-attachment:-moz-fixed;
     background-attachment: -ms-fixed;
     background-attachment: -o-fixed;}
