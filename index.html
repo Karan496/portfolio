@@ -23,7 +23,13 @@
   </script>
 
 </head>
-<body >
+<body>
+
+
+
+
+
+
 <div class="d-flex flex-wrap align-items-center justify-content-center" id="button">
 <i class="fa fa-angle-up" aria-hidden="true"></i>
 </div>
@@ -73,9 +79,7 @@ document.addEventListener('click',() => {
 
 
 <div class="loader">
-  <div class="LoaderBox">
-    
-  </div>
+  
 </div>
 
 <header class="col-md-12 fixed-top" style=" z-index: 999; height: 100px;">
@@ -111,10 +115,10 @@ document.addEventListener('click',() => {
 
 <div class="fixed-top col-md-12 CircleBox">
 
-<div class=" Bars New d-flex flex-wrap align-items-center justify-content-center" style="z-index: 999;">
-  <span class="One"></span>
-  <span class="Two"></span>
-  <span class="Three"></span>
+<div class="nav-toggle Bars New d-flex flex-wrap align-items-center justify-content-center" id="navigation-toggle" style="z-index: 999;">
+  <span class="One headline"></span>
+  <span class="Two headline"></span>
+  <span class="Three headline"></span>
 </div>
 
 
@@ -156,7 +160,7 @@ document.addEventListener('click',() => {
 </section>
 
 
-<section class="Intro col-md-12" id="About" style="cursor: url('./img/click.png'),pointer;">
+<section class="Intro col-md-12 section2" id="About" style="cursor: url('./img/click.png'),pointer;">
   <div class="container">
     <div class="row">
 <!-- <img src="./img/Education.png" alt="Book" class="Book animated fadeInLeft visible" data-animation="fadeInLeft">
@@ -246,7 +250,7 @@ document.addEventListener('click',() => {
 
 
 
-<section class="JobBox" id="Job">
+<section class="JobBox section3" id="Job">
 <img src="./img/Education.png" alt="Book" class="Book animated fadeInLeft visible" data-animation="fadeInLeft">
 <img src="./img/Flowers.png" alt="Flowers" class="Flowers animated fadeInRight visible" data-animation="fadeInRights">
 <div class="container">
@@ -321,7 +325,7 @@ document.addEventListener('click',() => {
 </section>
 
  
- <section class="Work" id="Work">
+ <section class="Work section4" id="Work">
   <div class="container">
     <div class="row">
  <div class="col-md-12 WorkBox d-flex flex-wrap align-items-center justify-content-start">
@@ -904,6 +908,49 @@ $(".Two").css({"transform": "rotate(0deg)","transition": "1s","top":"35%","width
 $(window).load(function(){
      $('.loader').fadeOut();
 });
+
+var initialTopOffset = $('.headline').offset().top;
+$(window).scroll(function(event) {
+  var scroll = $(window).scrollTop();
+  // if the top of our browser is inside the section2
+  if (scroll + initialTopOffset >= $('.section2').offset().top && scroll + initialTopOffset <= $('.section2').offset().top + $('.section2').outerHeight()) {
+    $('.Bars').addClass('light-mode1'); // add the class
+  } else {
+    $('.Bars').removeClass('light-mode1'); // remove the class
+  }
+});
+
+$(window).scroll(); //ensure if you're in current position when page is refreshed
+
+$(window).scroll(function(event) {
+  var scroll = $(window).scrollTop();
+  // if the top of our browser is inside the section2
+if (scroll + initialTopOffset >= $('.section3').offset().top && scroll + initialTopOffset <= $('.section3').offset().top + $('.section3').outerHeight()) {
+    $('.Bars').addClass('light-mode'); // add the class
+  } else {
+    $('.Bars').removeClass('light-mode'); // remove the class
+  }
+
+
+
+});
+$(window).scroll(); //ensure if you're in current position when page is refreshed
+
+
+$(window).scroll(function(event) {
+  var scroll = $(window).scrollTop();
+  // if the top of our browser is inside the section2
+  if (scroll + initialTopOffset >= $('.section4').offset().top && scroll + initialTopOffset <= $('.section4').offset().top + $('.section4').outerHeight()) {
+    $('.Bars').addClass('light-mode2'); // add the class
+  } else {
+    $('.Bars').removeClass('light-mode2'); // remove the class
+  }
+});
+
+
+//trigger the scroll
+$(window).scroll(); //ensure if you're in current position when page is refreshed
+
 </script>
 
 </body>
