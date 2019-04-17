@@ -804,7 +804,8 @@ footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{width
 
 @media (min-width: 320px) and (max-width: 767px) {
 .JobBox .Jobs .timeline:before{left: calc(10% - 2px);}
-body{background:#000 url('../img/home.jpg') no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; margin: 0;height: 100vh; /*cursor: url('../img/click.png'),pointer;*/}
+/* body{background:#000 url('../img/home.jpg') no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; margin: 0;height: 100vh; */
+    /*cursor: url('../img/click.png'),pointer;*/}
 
 .NavBar{display: none;}
   
