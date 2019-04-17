@@ -1,13 +1,23 @@
 .loader {
-    position: fixed;
+   position: fixed;
     left: 0px;
     top: 0px;
-    width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url('http://www.controlentergroup.com/wp-content/themes/controlenter/img/loading.io%20-%20Your%20SVG%20+%20GIF%20Ajax%20Loading%20Icons_files/hourglass.svg') 50% 50% no-repeat rgb(255,255,255);
+    width: 100%;
+    
+    background-color: #000;
+   
 }
 
+.loader .LoaderBox{
+    
+    height: 100%;
+    background-color: #fff;
+    
+    margin: 0 50px;
+    background: url(http://www.controlentergroup.com/wp-content/themes/controlenter/img/loading.io%20-%20Your%20SVG%20+%20GIF%20Ajax%20Loading%20Icons_files/hourglass.svg) 50% 50% no-repeat rgb(255,255,255);
+}
 
 body{scroll-behavior: smooth;}
 
