@@ -340,7 +340,7 @@ span, .btn-outline-primary {
     color: #2F2F2F;
 }
 
-.SkillBox{padding: 70px 0px 66px 0px;  background: url(../img/home.jpg)!important; 
+.SkillBox{padding: 70px 0px 66px 0px; background:url(../img/home.jpg)!important; 
 background-attachment: fixed!important;background-size: cover!important;position: relative!important;}
 
 .SkillBox .Skills{padding: 0 290px;}
