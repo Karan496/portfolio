@@ -18,7 +18,7 @@ body{
     background-attachment:-moz-fixed;
     background-attachment: -ms-fixed;
     background-attachment: -o-fixed;}
-}
+
 
 #button{display: inline-block;
   background-color: blue;
