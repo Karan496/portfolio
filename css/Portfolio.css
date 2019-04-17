@@ -1,23 +1,16 @@
+.Bars .headline{background-color: #fff;}
+.light-mode1 .headline,.light-mode .headline,.light-mode2 .headline{background-color: #000!important;}
+
 .loader {
-   position: fixed;
+    position: fixed;
     left: 0px;
     top: 0px;
+    width: 100%;
     height: 100%;
     z-index: 9999;
-    width: 100%;
-    
-    background-color: #000;
-   
+    background: url('http://www.controlentergroup.com/wp-content/themes/controlenter/img/loading.io%20-%20Your%20SVG%20+%20GIF%20Ajax%20Loading%20Icons_files/hourglass.svg') 50% 50% no-repeat rgb(255,255,255);
 }
 
-.loader .LoaderBox{
-    
-    height: 100%;
-    background-color: #fff;
-    
-    margin: 0 50px;
-    background: url(http://www.controlentergroup.com/wp-content/themes/controlenter/img/loading.io%20-%20Your%20SVG%20+%20GIF%20Ajax%20Loading%20Icons_files/hourglass.svg) 50% 50% no-repeat rgb(255,255,255);
-}
 
 body{scroll-behavior: smooth;}
 
@@ -170,11 +163,11 @@ bottom: 0; left: 76%; right: 0; border-radius: 100%; border: 2px solid #fff;z-in
 .Circle-title{font-family: 'Poppins', sans-serif; font-weight: 700;display: block;}
 .CircleBox .Bars{height: 40px; width: 40px; display: block; position: absolute;
  top: 5px; left: 96%; right: 0; bottom: 0; z-index: 111; background:transparent;}
-.CircleBox .Bars .One{height: 4px; width: 32px; background:blue; z-index: 11; position: absolute;
+.CircleBox .Bars .One{height: 4px; width: 32px; /*background:blue;*/ z-index: 11; position: absolute;
     top: 15%; left: 0; right: 0; bottom: 0;}
-.CircleBox .Two{top:35%;height: 4px; width: 32px; background:blue; z-index: 11; position: absolute;
+.CircleBox .Two{top:35%;height: 4px; width: 32px; /*background:blue;*/ z-index: 11; position: absolute;
      left: 0; right: 0; bottom: 0;}
-.CircleBox .Three{top:55%;width: 23px;height: 4px;  background:blue; z-index: 11; position: absolute;
+.CircleBox .Three{top:55%;width: 23px;height: 4px;  /*background:blue;*/ z-index: 11; position: absolute;
      left: 0; right: 0; bottom: 0;}
 
 header{display: none; }
