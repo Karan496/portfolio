@@ -1,0 +1,923 @@
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://www.controlentergroup.com/wp-content/themes/controlenter/img/loading.io%20-%20Your%20SVG%20+%20GIF%20Ajax%20Loading%20Icons_files/hourglass.svg') 50% 50% no-repeat rgb(255,255,255);
+}
+
+
+
+
+body{scroll-behavior: smooth;}
+
+
+
+
+#button{display: inline-block;
+  background-color: blue;
+ border-radius: 50%!important;
+  width: 50px; 
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  }
+
+#button i{font-size: 32px;color: #fff;
+  
+}
+
+
+#button:hover {
+  cursor: pointer;
+  background-color: #a5a5a5;
+  color: #000;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  transition: 0.3s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff; 
+  border-radius: 10px;
+  transition: 0.3s;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a5a5a5; 
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #646669;
+  transition: 0.3s; 
+}
+
+header .HeaderCenter nav{padding: 0% 0% 10% 80%!important; height: 100%; width: 100%; 
+    background:linear-gradient(to right,#bfbfbfe6, #000000);/* linear-gradient(to right, #00001de6,#01012fe0);*/
+    background: -webkit-linear-gradient(to right, #00001de6,#01012fe0);
+    background: -moz-linear-gradient(to right, #00001de6,#01012fe0);
+    background: -ms-linear-gradient(to right, #00001de6,#01012fe0);
+    background: -o-linear-gradient(to right,rgb(0,0,0,1), rgb(255,255,255,.4));}
+/*header .NavBar{top: 130px;height: 150px;z-index:19999;width: 150px;position: absolute; left: 130px; right: auto;}*/
+.NavProfile{top: 130px;height: 150px;z-index:19999;width: 150px; border: 3px solid #fff;padding: 4px;position: absolute; left: 130px; right: auto;}
+.Quotes{top: 300px; width: 41%; z-index:19999;position: absolute; left: 130px; right: auto;}
+.Quotes .QuotesP{color: #fff;   font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 35px;letter-spacing: 2px;}
+.Quotes .Dedicate{color: black;font-family: 'Poppins', sans-serif; font-weight: 600;}
+.Footer{cursor:url('../img/click11.png'),pointer;}
+.Work{cursor: url('../img/click.png'),pointer;}
+body{/*background:#000 url('../img/home.jpg') no-repeat;*/ background-attachment: fixed; background-size: cover; margin: 0;height: 100vh; /*cursor: url('../img/click.png'),pointer;*/}
+.cursor{height: 20px;width: 20px;border: 1px solid #fff;border-radius: 50%;position: absolute;z-index: 999;
+    transition-duration: 200ms;transition-timing-function: ease-out;animation: cursorAnim .5s infinite alternate;}
+
+.cursor:after{content: '';width: 40px;height: 40px;position: absolute; border: 8px solid gray; border-radius: 50%;
+opacity:.5;top: -11px; left: -11px; animation: cursorAnimm .5s infinite alternate;  }   
+
+@keyframes cursorAnim{
+    from{transform: scale(1);}
+    to{transform: scale(.7);}
+}
+
+@keyframes cursorAnimm{
+    from{transform: scale(1);}
+    to{transform: scale(.7);}
+}
+
+@keyframes cursorAnim3{
+    0%{transform: scale(1);}
+    50%{transform: scale(3);}
+    100%{transform: scale(1);opacity: 0;}
+}
+
+.expand{
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+.Header{background:#000 url('../img/home.jpg'); background-size: cover; position: relative; background-repeat: 
+ no-repeat;background-position: center center; padding-top: 400px;  background-attachment: fixed!important;opacity: 5;}
+
+.Header .HeaderBox{padding:30px 720px 40px 85px;}
+.Header .HeaderBox h1 a .fa-angle-left{transform: rotate(270deg); color: #fff; }
+.Header .HeaderBox h1 a .fa-angle-right{transform: rotate(0deg)!important; color: #fff; }
+.Header .HeaderBox h1{white-space: nowrap;overflow: hidden;width: 11em;
+ animation: type 3s steps(60, end);font-size: 35px;
+ font-weight: 400;line-height: 50px;color: #fff;}
+.Header .HeaderBox h1:nth-child(2){animation: type2 6s steps(60, end);}
+.Header .HeaderBox h1:nth-child(3){animation: type3 12s steps(60, end);}
+@keyframes type{from { width: 0; }} 
+@keyframes type2{0%{width: 0;}25%{width: 0;}50%{width: 0;}100%{ width: 50; }} 
+@keyframes type3{0%{width: 0;}25%{width: 0;}50%{ width: 0; }100%{width: 100;}} 
+
+.Circle1{height: 45px; width: 45px; background: transparent; position: absolute; top: 45%;
+bottom: 0; left: 42%; right: 0; border-radius: 100%; border: 2px solid #fff;z-index: 1;}
+.Circle2{height: 45px; width: 45px; background: transparent; position: absolute; top: 20%;
+bottom: 0; left: 30%; right: 0; border-radius: 100%; border: 2px solid #fff;z-index: 1;}
+.Circle3{height: 45px; width: 45px; background: transparent; position: absolute; top: 56%;
+bottom: 0; left: 76%; right: 0; border-radius: 100%; border: 2px solid #fff;z-index: 1;}
+
+.Circle1 i,.Circle2 i,.Circle3 i{color: #fff; font-size: 22px;}
+
+ .Circle1:hover, .Circle2:hover, .Circle3:hover{height: 50px;transform: rotate(90deg); transition-delay: 0.3s;transition: width 20s, height 20s, transform 20s;
+ width: 50px;background: #1E8DEE; border:none; transition: 0.8s;}
+
+.optional1{position: absolute; top: 47%;bottom: 0; left: 47%; right: 0;z-index: 1;display: none;height: 30px;width: 200px;}
+.optional2{position: absolute; top: 22%;bottom: 0; left: 35%; right: 0;z-index: 1;display: none;height: 30px;width: 250px;}
+.optional3{position: absolute; top: 58%;bottom: 0; left: 81%;  right:0; z-index: 1;display: none;height: 30px;width: 200px;}
+
+.Circle-title{font-family: 'Poppins', sans-serif; font-weight: 700;display: block;}
+.CircleBox .Bars{height: 40px; width: 40px; display: block; position: absolute;
+ top: 5px; left: 96%; right: 0; bottom: 0; z-index: 111; background:transparent;}
+.CircleBox .Bars .One{height: 4px; width: 32px; background:blue; z-index: 11; position: absolute;
+    top: 15%; left: 0; right: 0; bottom: 0;}
+.CircleBox .Two{top:35%;height: 4px; width: 32px; background:blue; z-index: 11; position: absolute;
+     left: 0; right: 0; bottom: 0;}
+.CircleBox .Three{top:55%;width: 23px;height: 4px;  background:blue; z-index: 11; position: absolute;
+     left: 0; right: 0; bottom: 0;}
+
+header{display: none; }
+header .HeaderCenter{background: transparent;position: absolute; /*border: 1px solid #fff;*/
+    border-radius: 4px;top: 15px;left: 0%;right: 0%;bottom: 0; margin:0px 0px 0px 0px;
+    height: 50px;z-index: 99;padding: 0px;}
+header .HeaderCenter nav ul{margin-top: 150px;padding: 0;margin-bottom: 0px;}
+header .HeaderCenter nav ul li{list-style-type: none;margin-right: 35px;}
+header .HeaderCenter nav ul .End{margin-right:90px!important;}
+header .HeaderCenter nav ul .active a{color:#6195FF!important;}
+header .HeaderCenter nav ul li a{color:#fff!important; text-decoration: none;font-size: 22px;}
+header .HeaderCenter nav ul li a:hover{color: #6195FF!important; }
+.CircleBox .Cross1{height: 25px; width: 1px; background: #ff0000; z-index: 11; position: absolute;
+    top: 6%; left: 95%; right: 0; bottom: 0; transform: rotate(90deg);}
+.CircleBox .Cancel1{height: 25px; width: 3px; background: #ffffff; z-index: 11; position: absolute;
+    top: 12%; left: 55%; right: 0; bottom: 0; transform: rotate(55deg);}
+.CircleBox .Cancel2{height: 25px; width: 3px; background: #ffffff; z-index: 11; position: absolute;
+    top: 12%; left: 55%; right: 0; bottom: 0; transform: rotate(125deg);}
+
+.nav-link {
+    display: inline-block;
+    padding: 6px 0px!important;
+}
+
+
+
+.transform-active{-webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;}
+
+@keyframes transform-active{
+0% {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}
+
+
+100% {opacity: 1;-webkit-transform: none;transform: none;}
+}
+
+nav>ul>li>a:after {
+    content: "";
+    display: block;
+    background-color: #6195FF;
+    height: 1px;
+    width: 0%;
+    -webkit-transition: 0.2s width;
+    transition: 0.2s width;}
+
+ul>li>a:hover:after, ul>li.active>a:after {
+    width: 100%;
+}
+
+/*.CircleBox .Profile{ height: 80px; width: 80px; display: block; position: absolute;
+ top: 72%; left: 3%; right: 0; bottom: 0; z-index: 111; border-radius: 100%; border:1px solid #fff; }
+ .CircleBox .Profile .avatar {
+  vertical-align: middle;
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;}
+
+*/.typed-cursor {
+    -webkit-animation: blinking 1.5s infinite both;
+    -moz-animation: blinking 1.5s infinite both;
+    -ms-animation: blinking 1.5s infinite both;
+    -o-animation: blinking 1.5s infinite both;
+    animation: blinking 1.5s infinite both;
+}
+
+@keyframes blinking{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.Intro{padding: 100px 0px; background: #F9F9FB; position: relative;}
+.JobBox .Book{position: absolute; top: 13%; left: -22%; right: 0; bottom: 0; z-index: 111;}
+.SkillBox .Coffee{position: absolute; top: 15%; height: 455px; left: 3%; right: 0%; bottom: 0; z-index: 111;}
+
+.JobBox .Flowers{display: none; position: absolute; top: 30%; left: 79%; right: 0%; bottom: 0; z-index: 111;}
+
+.Intro .IntroBox{padding: 0 290px;}
+/*.Intro .container{width:640px;}*/
+/*.Intro .IntroBox{margin-bottom: 70px;}*/
+.Intro .IntroBox .IntroCenter{margin-bottom: 40px;}
+.Intro .IntroBox .IntroCenter img{border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;border: 1px solid #000;}
+
+.Intro .IntroBox .IntroCenter p{font-family: "Poppins", sans-serif; font-weight: 600;
+ font-size: 14px; line-height: 18px; color: #2F2F2F; letter-spacing: 1px;margin: 0px;
+white-space: nowrap;overflow: hidden;width: 20em;
+ animation: type 7s steps(60, end);}
+
+.Intro .IntroBox h2{font-family: "Poppins", sans-serif; font-weight: 300;
+ font-size: 35px; line-height: 48px; color: #2F2F2F; letter-spacing: 1px;margin-bottom: 40px;
+}
+
+.Intro .IntroBox p{font-family: "Poppins", sans-serif; font-weight: 400;
+ font-size: 14px; line-height: 22px; color: #2F2F2F; letter-spacing: 1px;margin-bottom: 15px;}
+
+
+
+
+ .SkillBox .Skills p{font-family: "Poppins", sans-serif; font-weight: 600;
+ font-size: 18px; line-height: 22px; color: #fff; letter-spacing: 1px;margin-bottom: 15px;}
+
+.SkillBox .Skills h6{color: #a5a5a5!important;}
+
+.SkillBox .Skills .progress {
+    background: #fff!important;
+     -webkit-border-radius: 2rem; 
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+     border-radius: 2rem; 
+     background-color: rgba(0, 0, 0, 0.1); 
+     line-height: 0.5rem; 
+     margin: 0.5rem 0; 
+    overflow: visible;
+
+
+}
+
+
+.SkillBox .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 8px;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+.SkillBox .Skills .progress-bar {
+    position: relative;
+    height: 0.5rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border-radius: 2rem;
+    background-color: #1E8DEE;
+    overflow: visible;
+    color: #fff;
+
+
+}
+
+span, .btn-outline-primary {
+    border-color: #1E8DEE;
+}
+
+.progress-bar > span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+    line-height: calc(2.75rem - 3px);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 3px solid #1E8DEE;
+    color: #2F2F2F;
+}
+
+.SkillBox{padding: 70px 0px 66px 0px;  background: rgb(0,0,0,.7) url(../img/home.jpg); 
+background-attachment: fixed;background-size: cover;position: relative;}
+
+.SkillBox .Skills{padding: 0 290px;}
+
+.JobBox{padding: 100px 0px;background: #fff;position: relative;}
+.JobBox .Jobs p{font-family: "Poppins", sans-serif; font-weight: 600;
+ font-size: 18px; line-height: 22px; color: #2F2F2F; letter-spacing: 1px;margin-bottom: 15px;text-align: center;}
+
+
+.JobBox .Jobs .timeline {
+    position: relative;
+    padding: 4rem 0;
+}
+
+.JobBox .Jobs .timeline:before {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 2px);
+    bottom: 0;
+    width: 4px;
+    background-color: #a5a5a5;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+    border-radius: 4rem;
+    content: ' ';
+    height: 550px;
+}
+
+.timeline-event{padding: 0 150px;}
+
+/*.JobBox .timeline-event-date{margin-left: 50px;}*/
+
+.JobBox .Jobs .timeline .timeline-event:not(:last-child) {
+    margin-bottom: 60px;
+        min-height: 60px;
+}
+
+
+.JobBox .timeline .timeline-event .timeline-event-point {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #1E8DEE;
+    border: 8px solid #fff;
+}
+
+
+
+.JobBox .Jobs .timeline .timeline-event {
+    position: relative;
+    *: ;
+    zoom: }
+
+ .JobBox .Jobs .timeline .timeline-event .timeline-event-point {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #1E8DEE;
+    border: 8px solid #fff;}
+
+
+.timeline .timeline-event .timeline-event-point:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    content: ' ';
+    background-color: #1E8DEE;
+    -webkit-animation: timelinePointAnimation 2s infinite;
+    -moz-animation: timelinePointAnimation 2s infinite;
+    -ms-animation: timelinePointAnimation 2s infinite;
+    -o-animation: timelinePointAnimation 2s infinite;
+    animation: timelinePointAnimation 2s infinite;
+    z-index: 0;
+}
+
+/*.progress-bar, .timeline .timeline-event .timeline-event-point, .timeline .timeline-event .timeline-event-point:after, .btn-primary, .slick-dots li.slick-active button:before, 
+.fc button.fc-state-active, .nav-pills li a.active, .nav-pills li .nav-link.active, .nav-pills .nav-item a.active, 
+.nav-pills .nav-item .nav-link.active, .dark .selector .selector-input:checked + .selector-indicator:after, .point .point-indicator 
+.point-indicator-hover, .dark .slick-dots li.slick-active button:before {
+    background-color: #000;
+}
+*/
+/*.timeline .timeline-event .timeline-event-point:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    content: ' ';
+    background-color: #1E8DEE;
+    -webkit-animation: timelinePointAnimation 2s infinite;
+    -moz-animation: timelinePointAnimation 2s infinite;
+    -ms-animation: timelinePointAnimation 2s infinite;
+    -o-animation: timelinePointAnimation 2s infinite;
+    animation: timelinePointAnimation 2s infinite;
+    z-index: 0;
+}
+*/
+.JobBox .Jobs .timeline .timeline-event .timeline-event-date, .timeline .timeline-event .timeline-event-content {
+    width: 42%;
+    display: inline-block;
+}
+
+.Certificate{margin-top: 6px!important;display: none;}
+.JobBox .timeline .timeline-event .timeline-event-date {
+ 
+    font-weight: 500;
+ 
+    font-size: 0.9rem;
+ 
+    color: rgba(47, 47, 47, 0.5);
+}
+.JobBox .Jobs .timeline .timeline-event .timeline-event-content {
+    position: relative;
+    float: right;
+    
+    text-align: left;
+}
+
+.JobBox .timeline .timeline-event .timeline-event-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    font-weight: 600;}
+
+ .JobBox .timeline .timeline-event .timeline-event-caption {
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+.JobBox .light .text-muted {
+    color: rgba(47, 47, 47, 0.5) !important;
+}
+
+
+.JobBox .timeline .timeline-event:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+
+/*.psdtohtml .container{width: 1140px;}*/
+
+
+
+.image-edge > .image > img, .image-edge *[class^="col-"] > .image > img, .image-edge *[class*=" col-"] > .image > img {
+    max-width: none;
+}
+.animated.visible {
+    visibility: visible;
+}
+.animated {
+    visibility: hidden;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInLeft{
+0% {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}
+100% {opacity: 1;-webkit-transform: none;transform: none;}
+}
+
+@keyframes fadeInRight{
+0% {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}
+100% { opacity: 1; -webkit-transform: none; transform: none;}
+}
+.Profile1{ height: 80px; width: 80px; display: block; position: absolute;
+ top: 72%; left: 3%; right: 0; bottom: 0; z-index: 111; border-radius: 100%; border:1px solid #fff; }
+ 
+.Work .WorkBox .Self, footer .FooterBox .Self {
+    margin-right: 14px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+
+}
+
+.Work .WorkBox p, footer .FooterBox p{margin: 0px;}
+.Work{padding: 100px 0; background: rgb(240,240,240);}
+.Work .WorkBox p{font-family: "Poppins", sans-serif; font-weight: 600;
+ font-size: 14px; line-height: 22px; color: #2F2F2F; letter-spacing: 1px;margin-bottom: 0px;}
+.Work .WorkCenter ul li{list-style-type: none; margin-left:10px; 
+display: flex;flex-wrap: wrap;align-items: center;justify-content: center;}
+.Work .WorkCenter ul li a{text-decoration: none; border-radius: 50%;font-size: 0.9rem;background: #fbfbfb;
+    padding: 0.75rem 1.5rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    border-radius: 3rem;
+    color: inherit;
+    font-weight: 500;
+    margin: 2px;
+    box-shadow: 8px 8px 16px 0px #ced0d4;
+}
+.Work .WorkCenter .nav-tabs {
+    border:none;
+}
+
+.SM{display: none!important;}
+
+.Work .WorkCenter ul .active a {background: #1E8DEE; color: #ffffff; text-decoration: none;box-shadow: 4px 7px 12px 0px #c9cacc;}
+
+ul>li>a:after {
+    content: "";
+    display: none;
+    background-color: #6195FF;
+    height: 1px;
+    width: 0%;
+    -webkit-transition: 0.2s width;
+    transition: 0.2s width;
+}
+
+ .IMG,.IMG1,.IMG2,.IMG3,.IMG4,.IMG5,.IMG6,.IMG7,.IMG8,.IMG9,.IMG10,.IMG11{margin-top: 15px;}
+.Work .WorkCenter .tab-content .tab-pane a{text-decoration: none;}
+.Work .WorkCenter  img{/*height: 193px;*/ border-radius: 2%;/*height: 255px;*/
+    box-shadow: 12px 7px 20px 0px #b1afaf;}
+.Work .WorkCenter .HOVER:hover{/*opacity: 0.7;*/box-shadow:8px 9px 20px 10px #b9b6b6 !important; }
+.Work .WorkCenter .HOVER .img2{display: none;}
+.Work .WorkCenter h2{font-family: "Poppins", sans-serif; font-weight: 400;
+ font-size: 20px; line-height: 48px; color: #2F2F2F; letter-spacing: 1px;margin-bottom: 0px;
+text-align: center;}
+.fa-eye{display: none; display: flex;vertical-align: top;position: absolute;top: 0;bottom: 0;left: 0;right: 0; flex-wrap: wrap;align-items: center;justify-content: center;}
+
+
+.Footer{padding: 100px 0;background: rgb(0,0,0,1) url(../img/downloadcrop.png); background-attachment: fixed;
+    background-size: cover;}
+.Footer .FooterBox .Self {
+    margin-right: 14px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+}
+.Footer .FooterBox p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+.Footer .section-contact-content h6 {font-size: 14px;font-family: 'Poppins', sans-serif;font-weight: 600;}
+.Footer .section-contact-content address,.Footer .section-contact-content p,
+.Footer .section-contact-content .model a,.Footer .section-contact-content .model1{font-size: 20px;font-family: 'Poppins', sans-serif;font-weight: 400; color: #fff; text-decoration: none;}
+.Footer .section-contact-content li{list-style-type:none; height: 30px; width: 30px;
+display: flex;flex-wrap: wrap; align-items: center; justify-content: center; margin-left: 5px;  border-radius: 50%;}
+.Footer .section-contact-content ul{padding: 0; margin: 0;}
+.Footer .section-contact-content .Extra{margin-left: 0px!important;background:#3b5998; }
+.Footer .section-contact-content li:hover{background: #a5a5a5;}
+.Footer .section-contact-content .twitter{background:#00acee; }
+.Footer .section-contact-content .linkedin {background: #0077B5;}
+.Footer .section-contact-content .instagram {background: #3f729b;}
+.Footer .section-contact-content i{color: #fff;font-size: 12px;}
+
+footer{padding: 50px 0px;background: rgb(0,0,0);color: #fff; background-attachment: fixed;}
+footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{white-space: nowrap;overflow: hidden;width: 25em;
+ animation: type 7s steps(60, end);font-family: "Poppins", sans-serif;font-weight: 600;font-size: 14px;
+    line-height: 22px; color: #000; letter-spacing: 1px; margin-bottom: 0px;}
+    footer .FooterBox .FooterContent p, .Footer .FooterBox p{color: #fff!important;}
+footer .FooterBox a{box-shadow: none; font-family: 'Poppins', sans-serif;font-weight: 600;outline: none; border: none; font-size: 14px; text-align: center;outline: none;}
+footer .FooterBox a:hover,footer .FooterBox a:focus{box-shadow: none!important; color: #000;background: #fff;outline: none;border: none;}
+footer .spread-icons i{color:#fff; margin: 0 8px;font-size: 20px;}
+footer .spread-icons i:hover{color: #007bff;}
+footer .spread-icons a{text-decoration: none;}
+footer .spread-icons a:hover{color:#fff;}
+
+
+
+
+#navigation.navigation-panel.show {
+    visibility: visible;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.JobBox .resume-box{padding: 0 195px;}
+.timeline-event-date{text-align: center;}
+.ALL .eye{text-align: center;}
+.Work .WorkCenter .tab-pane{margin-top: 60px;}
+footer .FooterContent{margin-bottom: 1rem;}
+footer .FooterContent .btn {margin-left: 3rem!important;}
+footer .spread-icons{text-align: center;} 
+/*
+header .HeaderCenter nav{height: max-content;
+    width: 100%;
+    height: 100%;
+    padding: 0px 53px;
+    background: linear-gradient(to right, rgb(255,255,255,.4),rgb(0,0,0,.));}
+}*/
+
+@media (max-width: 1200px){
+    .Quotes { width: 40%;}
+  
+}
+
+
+@media (min-width: 1200px){
+    .timeline-event { padding: 0 206px;}
+  
+}
+
+@media (min-width: 1701px) and (max-width: 1950px){
+.JobBox .Book{    left: 2%;}
+
+}
+
+
+
+@media (min-width: 1501px) and (max-width: 1700px){
+.JobBox .Book{    left: -11%;}
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1500px){
+.JobBox .Book{    left: -13%;}
+
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1199px){
+ header .HeaderCenter nav{   padding: 0% 0% 10% 70%!important;}
+.NavProfile{height: 140px!important; width: 140px!important;}
+.Quotes{width: 43%; top: 285px;}
+.Quotes .QuotesP{font-size: 25px;
+    letter-spacing: 2px;}
+.JobBox .Book {
+    left: -24%;}
+    .CircleBox .Bars{top: 1px; left: 96%;}
+    .Header .HeaderBox h1{width: 12em;}
+    .Header .HeaderBox{padding: 30px 15px;}
+    .Header{padding-top: 300px;}
+    .Intro .IntroBox {padding: 0 200px;}
+    .Intro{padding: 90px 0px;}
+    .SkillBox .Skills{padding: 0 120px;}
+    .SkillBox .Coffee{top: 27%;left: 1%;height: 392px;}
+    .JobBox .Flowers{display: none;}
+    .SkillBox {
+    padding: 70px 0px 68px 0px;}
+    .JobBox .Jobs .timeline:before{left: calc(50% - 2px);}
+    .JobBox .Jobs .timeline .timeline-event .timeline-event-point{left: calc(50% - 15px);}
+    .JobBox{padding: 90px 0px;}
+    .timeline-event {padding: 0 140px;}
+    .Work{padding: 90px 0px;}
+    .Work .WorkCenter .tab-pane {margin-top: 45px;}
+    .Footer {padding: 90px 0;}
+    footer{padding: 40px 0px;}
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+ header .HeaderCenter nav{   padding: 0% 0% 10% 70%!important;}
+.NavProfile{height: 130px!important; width: 130px!important;}
+.Quotes{width: 33%; top: 275px;}
+.Quotes .QuotesP{font-size: 20px;
+    letter-spacing: 1px;}
+.Circle1, .Circle2, .Circle3{display: none!important;}
+.CircleBox .Bars{top: 5px; left: 1%;}
+.Header .HeaderBox h1{width: 12em;font-size: 30px;line-height: 40px;}
+ .Header .HeaderBox{padding: 30px 15px;}
+ .Header{padding-top: 250px;}
+ .SkillBox {
+    padding: 70px 0px 63px 0px;}
+.Intro .IntroBox {padding: 0px 200px;}
+.Intro{padding:80px 0px;}
+.SkillBox .Skills{padding: 0px 165px;}
+.SkillBox .Coffee{top: 35%;left: 2%; height: 346px;}
+.JobBox .Flowers{display: none;}
+.JobBox .Book{display: none;}
+.JobBox .Jobs .timeline:before{left: calc(50% - 2px);}
+.JobBox .Jobs .timeline .timeline-event .timeline-event-point{left: calc(50% - 15px);}
+.timeline-event{padding: 0px 143px;}
+.JobBox{padding: 80px 0px;}
+.Work{padding: 80px 0px;}
+.Footer{padding: 80px 0px;}
+.Work .WorkCenter .tab-pane {margin-top: 40px;}
+footer{padding: 35px 0px;}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Circle1, .Circle2, .Circle3{display: none!important;}
+ header .HeaderCenter nav{   padding: 0% 0% 10% 70%!important;}
+.NavProfile{height: 120px!important; width: 120px!important;}
+.Quotes{top: 265px;}
+.Quotes .QuotesP{font-size: 18px;
+    letter-spacing: 1px;}
+.Header .HeaderBox h1{width: 12em;font-size: 28px;line-height: 38px;}
+.Header{padding-top:250px;}
+.Header .HeaderBox{padding: 25px 15px;}
+.CircleBox .Bars{left: 1%;top: 5px;}
+.Intro{padding: 70px 0px;}
+.JobBox{padding: 70px 0px;}
+.Work{padding: 70px 0px;}
+.Footer{padding: 70px 0px;background: rgb(0,0,0,1) url(../img/downloadcrop.png) no-repeat!important;
+    background-size: cover!important;background-position: center center!important;background-attachment: fixed!important;}
+footer{padding: 30px 0px;}
+.JobBox .Flowers{display: none;}
+.JobBox .Book{display: none;}
+.SkillBox .Coffee{display: none;}
+.Intro .IntroBox{padding: 0 80px;}
+.SkillBox .Skills{padding: 0 15px;}
+.timeline-event{padding: 0px;}
+.Work .WorkCenter .tab-pane{margin-top: 40px;}
+.JobBox .Jobs .timeline:before{left: calc(50% - 2px);}
+.JobBox .Jobs .timeline .timeline-event .timeline-event-point{left: calc(50% - 15px);}
+.Footer .FooterBox{margin-bottom: 30px;}
+footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{width: 21em;font-size: 13px;}
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+.JobBox .Jobs .timeline:before{left: calc(10% - 2px);}
+/*body{background:#000 url('../img/home.jpg') no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; margin: 0;height: 100vh; }*/
+/*cursor: url('../img/click.png'),pointer;*/
+
+
+
+.NavBar{display: none;}
+  
+/*.fixed-top {position: unset;}*/
+.CircleBox .Bars {left: 1%;top: 3px;}
+.Intro .IntroBox {padding: 0 15px;}  
+.SkillBox .Skills {padding: 0 0px;}
+.SkillBox .Coffee {display: none;}
+.JobBox .Book {display: none;}
+.JobBox .Flowers {display: none;}
+.JobBox .resume-box{padding: 0 0px;}
+/*.Work .WorkCenter img{height: 200px;}*/
+.timeline-event {padding: 0 0px; }
+.Intro {padding: 60px 0px;}
+.IntroCenter p {font-size: 11px!important;width: 21em!important;}
+.Intro .IntroBox .IntroCenter img{height: 35px;width: 35px;margin-right: 8px;}
+.IntroCenter {margin-bottom: 25px!important;}
+.Intro .IntroBox h2 {font-size: 28px;margin-bottom: 20px;line-height: 40px;}
+.SkillBox {padding: 60px 0px 60px 0px;}
+.JobBox {padding: 60px 0px;}
+.JobBox .Jobs .timeline{padding: 4rem 15px;}
+.JobBox .Jobs p{text-align:center; padding: 0 15px;}
+.Work {padding: 60px 0;}
+.Work .WorkBox .Self, footer .FooterBox .Self {margin-right: 8px;}
+footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{font-size: 11px;width: 22em;}
+.Work .WorkCenter ul li{margin-left: 0px;width: 100%;margin-bottom: 15px;}
+.Work .WorkCenter ul .Wordpress{margin-bottom: 0px!important;}
+.Work .WorkCenter .tab-pane{margin-top: 20px;}
+.Work .WorkCenter h2{margin-bottom: 10px;font-size: 18px;}
+.Footer {padding: 60px 0;background: rgb(0,0,0,1) url(../img/downloadcrop.png) no-repeat!important;
+    background-size: cover!important;background-position: center center!important;background-attachment: fixed!important;}
+.Footer .FooterBox{margin-bottom: 30px;}
+.Footer .section-contact-content .model,.Footer .section-contact-content .MODEL{margin-top: 20px;}
+footer {padding: 30px 0px 0 0;}
+footer .FooterContent{margin-bottom: 20px;}
+footer .FooterContent .btn {margin-left: 0rem!important;}
+footer .FooterBox{margin-bottom: 30px; }
+footer .spread-icons{text-align: left;}
+footer .spread-icons p{text-align:center; margin-top: 40px!important;}
+footer .spread-icons p br{display: none;}
+.JobBox .Jobs .timeline .timeline-event .timeline-event-date, .timeline .timeline-event .timeline-event-content{
+    width: unset;display: block;text-align: left;margin-left: 60px;margin-bottom: 10px}
+ .Certificate, .Date{display: none!important;}   
+ .SM{margin-left: 0px!important;margin-top: 7px!important; display: block!important;}
+.JobBox .Jobs .timeline .timeline-event .timeline-event-content{float: left;margin-left: 60px;}
+.Work .WorkCenter ul li {margin-left: inherit;width: unset;}
+.Work .WorkCenter ul li a{margin-left: 15px!important;}
+.Work .WorkCenter ul .Wordpress {margin-bottom: auto!important;}
+.JobBox .Jobs .timeline .timeline-event .timeline-event-point{left: calc(10% - 27px)!important;}
+.Circle2{display: none!important; top:87%;left: 65%;display: none; height: 30px; width: 30px; opacity: 0.3;}
+.optional2{left: 19%;top: 84%;height: 28px;width: 183px;display: none!important;}
+
+
+
+
+.Circle3{
+    display: none!important;
+    top: 35%;
+    left: 27%;height: 35px;width: 35px;}
+    .Circle1 {
+        display: none!important;
+    top: 40%;
+    left: 73%;
+    height: 35px;
+    width: 35px;
+}
+
+
+
+.Circle1 i, .Circle2 i, .Circle3 i{font-size: 10px;}
+.Circle1:hover, .Circle2:hover, .Circle3:hover{height: 35px;
+ width: 35px;}
+
+.optional3{left: 31%;top: 44%;height: 28px;width: 183px;display: none!important;}
+.optional1{top: 64%;left: 35%;height: 28px;width: 183px;display: none!important;}
+.Header .HeaderBox{padding: 0px 15px;}
+.Header .HeaderBox h1{width: 12em;font-size: 26px;line-height: 36px;}
+.Header{padding-top: 185px;padding-bottom: 35px; }
+header .HeaderCenter nav{height: max-content;
+padding: 15px 43% 0% 16%!important;/* 0px 48% 0% 10%!important*/
+    width: 100%;
+    height: 100%;
+    /*padding: 0px 53px!important;*/
+   background:linear-gradient(to right, #000000,#bfbfbfe6);/* linear-gradient(  to right, #00001de6,#01012fe0)*/
+    background: -webkit-linear-gradient(to right, #00001de6,#01012fe0);
+    background: -moz-linear-gradient(to right, #00001de6,#01012fe0);
+    background: -ms-linear-gradient(to right, #00001de6,#01012fe0);
+    background: -o-linear-gradient(to right,rgb(0,0,0,1), rgb(255,255,255,.4));
+ 
+}
+
+
+
+
+/*linear-gradient(to right,rgb(0,0,0,1), rgb(255,255,255,.4))*/
+
+
+header .HeaderCenter nav ul{margin-top: 70px;}
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+.Header .HeaderBox h1 {
+    width: 12em;
+    font-size: 22px;
+    line-height: 32px;
+}
+header .HeaderCenter nav{padding: 15px 20% 0% 16%!important;}
+.CircleBox .Bars {left: 2%;top: 3px;}
+.Circle1{top:44%;left: 52%;display: none; opacity: 0.3;height: 30px; width: 30px;}
+.Circle3{top: 25%;left: 27%;display: none;opacity: 0.3; height: 30px; width: 30px;}
+.JobBox .Jobs .timeline:before{left: calc(10% - 2px);}
+
+}
