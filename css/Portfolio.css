@@ -124,7 +124,7 @@ opacity:.5;top: -11px; left: -11px; animation: cursorAnimm .5s infinite alternat
 }
 
 .Header{background:#000 url('../img/home.jpg'); background-size: cover; position: relative; background-repeat: 
- no-repeat;background-position: center center; padding-top: 400px;  background-attachment: fixed;opacity: 5;}
+ no-repeat;background-position: center center; padding-top: 400px;  background-attachment: fixed!important;opacity: 5;}
 
 .Header .HeaderBox{padding:30px 720px 40px 85px;}
 .Header .HeaderBox h1 a .fa-angle-left{transform: rotate(270deg); color: #fff; }
