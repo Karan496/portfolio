@@ -9,11 +9,15 @@
 }
 
 
-
-
 body{scroll-behavior: smooth;}
 
-
+body{
+    background: url(../img/home.jpg) no-repeat; background-size: cover;
+    background-position: center center; background-attachment: fixed;
+ background-attachment: fixed-webkit-;
+    background-attachment:-moz-fixed;
+    background-attachment: -ms-fixed;
+    background-attachment: -o-fixed;}
 
 
 #button{display: inline-block;
@@ -83,18 +87,18 @@ body{scroll-behavior: smooth;}
 }
 
 header .HeaderCenter nav{padding: 0% 0% 10% 80%!important; height: 100%; width: 100%; 
-    background:linear-gradient(to right,#bfbfbfe6, #000000);/* linear-gradient(to right, #00001de6,#01012fe0);*/
+    background:linear-gradient(to right, #00001de6,#01012fe0);   /*(to right,#bfbfbfe6, #000000)*/  /* linear-gradient(to right, #00001de6,#01012fe0);*/
     background: -webkit-linear-gradient(to right, #00001de6,#01012fe0);
     background: -moz-linear-gradient(to right, #00001de6,#01012fe0);
     background: -ms-linear-gradient(to right, #00001de6,#01012fe0);
-    background: -o-linear-gradient(to right,rgb(0,0,0,1), rgb(255,255,255,.4));}
+    background: -o-linear-gradient(to right, #00001de6,#01012fe0);}  /*(to right,rgb(0,0,0,1), rgb(255,255,255,.4))*/
 /*header .NavBar{top: 130px;height: 150px;z-index:19999;width: 150px;position: absolute; left: 130px; right: auto;}*/
 .NavProfile{top: 130px;height: 150px;z-index:19999;width: 150px; border: 3px solid #fff;padding: 4px;position: absolute; left: 130px; right: auto;}
 .Quotes{top: 300px; width: 41%; z-index:19999;position: absolute; left: 130px; right: auto;}
 .Quotes .QuotesP{color: #fff;   font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 35px;letter-spacing: 2px;}
 .Quotes .Dedicate{color: black;font-family: 'Poppins', sans-serif; font-weight: 600;}
-.Footer{cursor:url('./img/click11.png'),pointer;}
-.Work{cursor: url('./img/click.png'),pointer;}
+.Footer{cursor:url('../img/click11.png'),pointer;}
+.Work{cursor: url('../img/click.png'),pointer;}
 body{margin: 0;height: 100vh;}
 .cursor{height: 20px;width: 20px;border: 1px solid #fff;border-radius: 50%;position: absolute;z-index: 999;
     transition-duration: 200ms;transition-timing-function: ease-out;animation: cursorAnim .5s infinite alternate;}
@@ -123,8 +127,7 @@ opacity:.5;top: -11px; left: -11px; animation: cursorAnimm .5s infinite alternat
     border: 1px solid red;
 }
 
-.Header{background:#000 url('./img/home.jpg'); background-size: cover; position: relative; background-repeat: 
- no-repeat;background-position: center center; padding-top: 400px;  background-attachment: fixed!important;opacity: 5;}
+.Header{ position: relative;  padding-top: 400px; opacity: 5;}
 
 .Header .HeaderBox{padding:30px 720px 40px 85px;}
 .Header .HeaderBox h1 a .fa-angle-left{transform: rotate(270deg); color: #fff; }
@@ -340,8 +343,7 @@ span, .btn-outline-primary {
     color: #2F2F2F;
 }
 
-.SkillBox{padding: 70px 0px 66px 0px;  background: rgb(0,0,0,.7) url(./img/home.jpg); 
-background-attachment: fixed;background-size: cover;position: relative;}
+.SkillBox{padding: 70px 0px 66px 0px; position: relative!important;}
 
 .SkillBox .Skills{padding: 0 290px;}
 
@@ -613,8 +615,12 @@ text-align: center;}
 .fa-eye{display: none; display: flex;vertical-align: top;position: absolute;top: 0;bottom: 0;left: 0;right: 0; flex-wrap: wrap;align-items: center;justify-content: center;}
 
 
-.Footer{padding: 100px 0;background: rgb(0,0,0,1) url(./img/downloadcrop.png); background-attachment: fixed;
-    background-size: cover;}
+.Footer{padding: 100px 0;}
+/*background:#000 url(../img/downloadcrop.png) no-repeat!important; background-position: center center; background-attachment: fixed;
+    background-size: cover;
+*/
+
+
 .Footer .FooterBox .Self {
     margin-right: 14px;
     width: 40px;
@@ -643,7 +649,7 @@ display: flex;flex-wrap: wrap; align-items: center; justify-content: center; mar
 .Footer .section-contact-content .instagram {background: #3f729b;}
 .Footer .section-contact-content i{color: #fff;font-size: 12px;}
 
-footer{padding: 50px 0px;background: rgb(0,0,0);color: #fff; background-attachment: fixed;}
+footer{padding: 50px 0px;background: rgb(0,0,0);color: #fff;}
 footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{white-space: nowrap;overflow: hidden;width: 25em;
  animation: type 7s steps(60, end);font-family: "Poppins", sans-serif;font-weight: 600;font-size: 14px;
     line-height: 22px; color: #000; letter-spacing: 1px; margin-bottom: 0px;}
@@ -784,8 +790,7 @@ footer{padding: 35px 0px;}
 .Intro{padding: 70px 0px;}
 .JobBox{padding: 70px 0px;}
 .Work{padding: 70px 0px;}
-.Footer{padding: 70px 0px;background: rgb(0,0,0,1) url(./img/downloadcrop.png) no-repeat!important;
-    background-size: cover!important;background-position: center center!important;background-attachment: fixed!important;}
+.Footer{padding: 70px 0px;}
 footer{padding: 30px 0px;}
 .JobBox .Flowers{display: none;}
 .JobBox .Book{display: none;}
@@ -804,11 +809,6 @@ footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{width
 
 @media (min-width: 320px) and (max-width: 767px) {
 .JobBox .Jobs .timeline:before{left: calc(10% - 2px);}
-/*body{background:#000 url('./img/home.jpg') no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; margin: 0;height: 100vh; }*/
-/*cursor: url('./img/click.png'),pointer;*/
-
-
-
 .NavBar{display: none;}
   
 /*.fixed-top {position: unset;}*/
@@ -837,8 +837,7 @@ footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{font-
 .Work .WorkCenter ul .Wordpress{margin-bottom: 0px!important;}
 .Work .WorkCenter .tab-pane{margin-top: 20px;}
 .Work .WorkCenter h2{margin-bottom: 10px;font-size: 18px;}
-.Footer {padding: 60px 0;background: rgb(0,0,0,1) url(./img/downloadcrop.png) no-repeat!important;
-    background-size: cover!important;background-position: center center!important;background-attachment: fixed!important;}
+.Footer {padding: 60px 0;}
 .Footer .FooterBox{margin-bottom: 30px;}
 .Footer .section-contact-content .model,.Footer .section-contact-content .MODEL{margin-top: 20px;}
 footer {padding: 30px 0px 0 0;}
@@ -891,7 +890,7 @@ padding: 15px 43% 0% 16%!important;/* 0px 48% 0% 10%!important*/
     width: 100%;
     height: 100%;
     /*padding: 0px 53px!important;*/
-   background:linear-gradient(to right, #000000,#bfbfbfe6);/* linear-gradient(  to right, #00001de6,#01012fe0)*/
+   background:linear-gradient(to right, #00001de6,#01012fe0);  /*(to right, #000000,#bfbfbfe6)*/ /* linear-gradient(  to right, #00001de6,#01012fe0)*/
     background: -webkit-linear-gradient(to right, #00001de6,#01012fe0);
     background: -moz-linear-gradient(to right, #00001de6,#01012fe0);
     background: -ms-linear-gradient(to right, #00001de6,#01012fe0);
