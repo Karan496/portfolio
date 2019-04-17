@@ -835,7 +835,8 @@ footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{font-
 .Work .WorkCenter ul .Wordpress{margin-bottom: 0px!important;}
 .Work .WorkCenter .tab-pane{margin-top: 20px;}
 .Work .WorkCenter h2{margin-bottom: 10px;font-size: 18px;}
-.Footer {padding: 60px 0;}
+.Footer {padding: 60px 0;background: rgb(0,0,0,1) url(../img/downloadcrop.png) no-repeat!important;
+    background-size: cover!important;background-position: center center!important;background-attachment: fixed!important;}
 .Footer .FooterBox{margin-bottom: 30px;}
 .Footer .section-contact-content .model,.Footer .section-contact-content .MODEL{margin-top: 20px;}
 footer {padding: 30px 0px 0 0;}
