@@ -12,6 +12,9 @@
 }
 
 
+
+
+
 body{scroll-behavior: smooth;}
 
 body{
@@ -90,11 +93,12 @@ body{
 }
 
 header .HeaderCenter nav{padding: 0% 0% 10% 80%!important; height: 100%; width: 100%; 
-    background:linear-gradient(to right, #00001de6,#01012fe0);   /*(to right,#bfbfbfe6, #000000)*/  /* linear-gradient(to right, #00001de6,#01012fe0);*/
-    background: -webkit-linear-gradient(to right, #00001de6,#01012fe0);
-    background: -moz-linear-gradient(to right, #00001de6,#01012fe0);
-    background: -ms-linear-gradient(to right, #00001de6,#01012fe0);
-    background: -o-linear-gradient(to right, #00001de6,#01012fe0);}  /*(to right,rgb(0,0,0,1), rgb(255,255,255,.4))*/
+    background:linear-gradient(to right, #00001de6,#01012fe0)!important;   /*(to right,#bfbfbfe6, #000000)*/  /* linear-gradient(to right, #00001de6,#01012fe0);*/
+    background: -webkit-linear-gradient(to right, #00001de6,#01012fe0)!important;
+    background: -moz-linear-gradient(to right, #00001de6,#01012fe0)!important;
+    background: -ms-linear-gradient(to right, #00001de6,#01012fe0)!important;
+    background: -o-linear-gradient(to right, #00001de6,#01012fe0)!important;
+    background: #000}  /*(to right,rgb(0,0,0,1), rgb(255,255,255,.4))*/
 /*header .NavBar{top: 130px;height: 150px;z-index:19999;width: 150px;position: absolute; left: 130px; right: auto;}*/
 .NavProfile{top: 130px;height: 150px;z-index:19999;width: 150px; border: 3px solid #fff;padding: 4px;position: absolute; left: 130px; right: auto;}
 .Quotes{top: 240px; width: 41%; z-index:19999;position: absolute; left: 130px; right: auto;}
@@ -944,5 +948,4 @@ header .HeaderCenter nav{padding: 15px 20% 0% 16%!important;}
 .Circle3{top: 25%;left: 27%;display: none;opacity: 0.3; height: 30px; width: 30px;}
 .JobBox .Jobs .timeline:before{left: calc(10% - 2px);}
 
-    
 }
