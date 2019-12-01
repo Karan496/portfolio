@@ -124,7 +124,7 @@ white-space: nowrap;overflow: hidden;width: 20em;
  animation: type 7s steps(60, end);}
 .Intro .IntroBox h2{font-family: "Poppins", sans-serif; font-weight: 300;
  font-size: 35px; line-height: 48px; color: #2F2F2F; letter-spacing: 1px;margin-bottom: 40px;}
-.Intro .IntroBox p{font-family: "Poppins", sans-serif; font-weight: 400;
+.Intro .IntroBox p{font-family: "Poppins", sans-serif; font-weight: 400;text-align:justify;
  font-size: 14px; line-height: 22px; color: #2F2F2F; letter-spacing: 1px;margin-bottom: 15px;}
 .SkillBox .Skills p{font-family: "Poppins", sans-serif; font-weight: 600;
  font-size: 18px; line-height: 22px; color: #fff; letter-spacing: 1px;margin-bottom: 15px;}
