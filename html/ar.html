@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TARC - The Augmented Reality Company</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="linear-gradient(120deg, #000 0%, #000 100%);" />
+    <link rel="stylesheet" type="text/css" href="../css/extra_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/dashboard.jpg" type="image/png" sizes="64x64">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+</head>
+<body class="example-1  scrollbar-dusty-grass square thin">
+
+    <div id="Load" class="load">
+        <div class="load__container">
+
+            <img src="../img/Logo.png" alt="Loader" class="img-fluid">
+
+
+
+        </div>
+    </div>
+
+
+
+    <a href="#" id="scroll" style="display: none;z-index: 99999;">
+        <span></span></a>
+
+
+
+
+    <header class="d-flex flex-wrap align-items-center justify-content-start">
+        <div class="container-fluid">
+            <div class="d-flex align-items-bottom justify-content-between">
+
+                <div class="Logo" data-aos="fade-right">
+                    <img src="../img/logo2.png" alt="" class="img-fluid">
+                </div>
+
+                <nav class="ml-auto  d-md-flex align-items-end justify-content-between Dekstop">
+                    <div class="grid">
+                        <a>Show grid <i class="fa fa-th" aria-hidden="true" title="Show Grid"></i> </a>
+                    </div>
+                    <div class="Preview">
+                        <a title="Preview">preview</a>
+                    </div>
+
+                    <div class="Multi">
+                        <i class="fa fa-user-o"></i>
+                        
+                        <button class="Select">Muli Elija</button>
+                       <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                </nav>
+
+
+                <nav class="Mobile">
+                    <div class="Grid">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                    </div>
+                    <div class="Preview">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="User">
+                        <button class="Select">Muli Elija</button>
+                      
+                    </div>
+                </nav>
+
+
+            </div>
+        </div>
+    </header>
+
+    <section class="Main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-2 MainLeft d-flex align-items-center justify-content-start flex-column">
+                    <h4>Projects</h4>
+                    <div class="Box1">
+<!--                        <i class="fa fa-trash"></i>-->
+                        <div class="NewPage Form">
+                            <input type="text" placeholder="Enter Title" name="title" class="EnterTitle">
+                            <label class="uploadBtnWrap" for="thefile">
+                            <input type="file" id="thefile" onchange="alertFilename()" />
+                            <span class="btns">choose File</span>
+                            <p id="fileName">No file selected</p>
+                            </label>
+                            
+                            <div class="PairBtn d-flex alignt-items-center justify-content-between">
+                            <button>Upload</button>
+                            <button>Cancel</button>
+                            
+                            </div>
+
+                        </div>
+<!--                        <span>Title</span>-->
+
+                    </div>
+
+                    <div class="Box1">
+                        <i class="fa fa-trash"></i>
+                        <div class="NewPage Img">
+                            <img src="../img/img1.jpg" alt="" class="img-fluid">
+
+                        </div>
+                        <span>Eve Cover</span>
+
+                    </div>
+
+                    <div class="Box1">
+                        <i class="fa fa-trash"></i>
+                        <div class="NewPage Img">
+                            <img src="../img/img2.jpg" alt="" class="img-fluid">
+
+                        </div>
+                        <span>Teaser</span>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-8 MainCenter">
+
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-2 MainRight">
+
+                    <div class="Aug">
+                        <h4>AUGMENTATIONS</h4>
+                        <div class="OnScroll   scrollbar-dusty-grass square thin Extra">
+                        <div class="Row d-flex align-items-start justify-content-between">
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+
+                                </div>
+                                <p>Audio</p>
+                            </div>
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-picture-o"></i>
+
+                                </div>
+                                <p>2D Image</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="Row d-flex align-items-start justify-content-between">
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-file-video-o" aria-hidden="true"></i>
+
+                                </div>
+                                <p>Video</p>
+                            </div>
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <img src="../img/360-view.png" alt="" class="img-fluid IconsImg">
+
+                                </div>
+                                <p>360 View</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="Row d-flex align-items-start justify-content-between">
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <img src="../img/slider.png" alt="" class="img-fluid IconsImg">
+
+                                </div>
+                                <p>Carousel</p>
+                            </div>
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <img src="../img/3d.png" alt="" class="img-fluid IconsImg">
+
+                                </div>
+                                <p>3D Image</p>
+                            </div>
+                        </div>
+                            
+                            
+                            <div class="Row d-flex align-items-start justify-content-between">
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+
+                                </div>
+                                <p>Audio</p>
+                            </div>
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-picture-o"></i>
+
+                                </div>
+                                <p>2D Image</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="Row d-flex align-items-start justify-content-between">
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-file-video-o" aria-hidden="true"></i>
+
+                                </div>
+                                <p>Video</p>
+                            </div>
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <img src="../img/360-view.png" alt="" class="img-fluid IconsImg">
+
+                                </div>
+                                <p>360 View</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="Row d-flex align-items-start justify-content-between">
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <img src="../img/slider.png" alt="" class="img-fluid IconsImg">
+
+                                </div>
+                                <p>Carousel</p>
+                            </div>
+                            <div class="TopBox d-flex align-items-start justify-content-start flex-column">
+                                <div class="Box d-flex align-items-center justify-content-center">
+                                    <img src="../img/3d.png" alt="" class="img-fluid IconsImg">
+
+                                </div>
+                                <p>3D Image</p>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="Row">
+                            <div class="Select2">
+                                <button>Suggested Buttons</button>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+
+                    <div class="Pro">
+                        <h4>Properties</h4>
+
+
+
+                        <div class="Title">
+                            <i class="fa fa-caret-down mr-1 ml-1" aria-hidden="true"></i>
+                            <span>Position</span>
+                        </div>
+                        <div class="InnerPos">
+
+
+
+
+
+                            <!-- With number fields -->
+                            <div class="filter level-filter level-req">
+                                <div id="rangeSlider" class="range-slider">
+
+
+
+
+                                    <div class="range-group">
+                                        <span>Y</span>
+                                        <input class="range-input slider" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="range-input Hide" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="" type="number" value="50" min="0" max="50" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="filter level-filter level-req">
+                                <div id="rangeSlider2" class="range-slider">
+
+
+
+
+                                    <div class="range-group">
+                                        <span>Z</span>
+                                        <input class="range-input slider" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="range-input Hide" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="" type="number" value="50" min="0" max="50" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="Title">
+                            <i class="fa fa-caret-down mr-1 ml-1" aria-hidden="true"></i>
+                            <span>Size</span>
+                        </div>
+                        <div class="InnerPos">
+
+
+
+
+
+                            <!-- With number fields -->
+                            <div class="filter level-filter level-req">
+                                <div id="rangeSlider3" class="range-slider">
+
+
+
+
+                                    <div class="range-group">
+                                        <span>Scale</span>
+                                        <input class="range-input slider" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="range-input Hide" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="" type="number" value="50" min="0" max="50" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                        <div class="Title">
+                            <i class="fa fa-caret-down mr-1 ml-1" aria-hidden="true"></i>
+                            <span>Opacity</span>
+                        </div>
+                        <div class="InnerPos">
+
+
+
+
+
+                            <!-- With number fields -->
+                            <div class="filter level-filter level-req">
+                                <div id="rangeSlider4" class="range-slider">
+
+
+
+
+                                    <div class="range-group">
+                                        <!--        <span>Scale</span>-->
+                                        <input class="range-input slider" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="range-input Hide" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="" type="number" value="50" min="0" max="50" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                        <div class="Title">
+                            <i class="fa fa-caret-down mr-1 ml-1" aria-hidden="true"></i>
+                            <span>Rotation</span>
+                        </div>
+                        <div class="InnerPos">
+
+
+
+
+
+                            <!-- With number fields -->
+                            <div class="filter level-filter level-req">
+                                <div id="rangeSlider5" class="range-slider">
+
+
+
+
+                                    <div class="range-group">
+                                        <span>X</span>
+                                        <input class="range-input slider" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="range-input Hide" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="" type="number" value="50" min="0" max="50" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter level-filter level-req">
+                                <div id="rangeSlider6" class="range-slider">
+
+
+
+
+                                    <div class="range-group">
+                                        <span>Y</span>
+                                        <input class="range-input slider" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="range-input Hide" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="" type="number" value="50" min="0" max="50" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter level-filter level-req">
+                                <div id="rangeSlider7" class="range-slider">
+
+
+
+
+                                    <div class="range-group">
+                                        <span>Z</span>
+                                        <input class="range-input slider" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="range-input Hide" value="50" min="1" max="50" step="1" type="range" />
+                                        <input class="" type="number" value="50" min="0" max="50" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                        <div class="Title">
+                            <i class="fa fa-caret-down mr-1 ml-1" aria-hidden="true"></i>
+                            <span>Video</span>
+                        </div>
+
+
+
+
+
+                        <form action="#" class="RadioForm RadioBtn">
+
+                            <input type="radio" id="test1" name="radio-group" checked>
+                            <label for="test1">Fullscreen</label>
+
+
+                            <input type="radio" id="test2" name="radio-group">
+                            <label for="test2">Overlay</label>
+
+
+                            <input type="radio" id="test3" name="radio-group">
+                            <label for="test3">Overlay with alpha channel</label>
+
+                            <input type="radio" id="test4" name="radio-group">
+                            <label for="test4">Play immediately</label>
+
+                            <input type="radio" id="test5" name="radio-group">
+                            <label for="test5">Resume on recognition</label>
+
+                            <input type="radio" id="test6" name="radio-group">
+                            <label for="test6">Loop</label>
+
+                        </form>
+
+
+
+
+
+                    </div>
+
+                    <div class="Augme">
+                        <h4>Augmentations</h4>
+                        
+                        <div class="d-flex align-items-center justify-content-between Box1">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                                <p>Smiklly girl</p>
+                            </div>
+                            <div class="Trash">
+                                <i class="fa fa-trash"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="d-flex align-items-center justify-content-between Box2">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <i class="fa fa-picture-o"></i>
+                                <p>Cover page</p>
+                            </div>
+                            <div class="Trash">
+                                <i class="fa fa-trash"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            PUBLISH
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">PUBLISH YOUR CAMPAIGN</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-3 Green">
+                                                <div class="Header">
+                                                    <h4>Basic</h4>
+
+                                                </div>
+
+                                                <div class="Body">
+
+                                                    <p>KSHS <span>1,500</span></p>
+
+                                                </div>
+
+                                                <div class="Footer">
+                                                    <input type="radio" id="Select"><label for="Select">Select</label>
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-3 Sky">
+                                                <div class="Header">
+                                                    <h4>Basic</h4>
+
+                                                </div>
+
+                                                <div class="Body">
+
+                                                    <p>KSHS <span>1,500</span></p>
+
+                                                </div>
+
+                                                <div class="Footer">
+                                                    <input type="radio" id="Select1"><label for="Select1">Select</label>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-md-3 Orange">
+                                                <div class="Header">
+                                                    <h4>Basic</h4>
+
+                                                </div>
+
+                                                <div class="Body">
+
+                                                    <p>KSHS <span>1,500</span></p>
+
+                                                </div>
+
+                                                <div class="Footer">
+                                                    <input type="radio" id="Select2"><label for="Select2">Select</label>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-md-3 Blue">
+                                                <div class="Header">
+                                                    <h4>Basic</h4>
+
+                                                </div>
+
+                                                <div class="Body">
+
+                                                    <p>KSHS <span>1,500</span></p>
+
+                                                </div>
+
+                                                <div class="Footer">
+                                                    <input type="radio" id="Select3"><label for="Select3">Select</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <div class="row">
+                                            <div class="col-md-4 Green">
+                                                <h4>pay with Mpesa</h4>
+                                                <ul>
+                                                    <li><a>Go to the M-pesa Menu</a></li>
+                                                    <li><a>Select Pay Bill</a></li>
+                                                    <li><a>Enter Business No. 220220</a></li>
+                                                    <li><a>Enter Account No. ZUKUXXXXX </a></li>
+                                                    <li><a>(Where XXXXX is your Zuku account number) </a></li>
+                                                    <li><a>Enter the Amount </a></li>
+                                                    <li><a>Enter your M-Pesa PIN then send</a></li>
+
+                                                </ul>
+                                            </div>
+
+
+                                            <div class="col-md-4 Red">
+                                                <h4>pay with AIRTEL</h4>
+                                                <ul>
+                                                    <li><a>Go to the M-pesa Menu</a></li>
+                                                    <li><a>Select Pay Bill</a></li>
+                                                    <li><a>Enter Business No. 220220</a></li>
+                                                    <li><a>Enter Account No. ZUKUXXXXX </a></li>
+                                                    <li><a>(Where XXXXX is your Zuku account number) </a></li>
+                                                    <li><a>Enter the Amount </a></li>
+                                                    <li><a>Enter your M-Pesa PIN then send</a></li>
+
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="../js/3.3.1.jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
