@@ -73,6 +73,7 @@ top: 15%; left: 0; right: 0; bottom: 0;}
 left: 0; right: 0; bottom: 0;}
 .CircleBox .Three{top:55%;width: 23px;height: 4px;  background:#6195FF; z-index: 11; position: absolute;
 left: 0; right: 0; bottom: 0;}
+.Work .WorkCenter ul li {margin-bottom: 15px;}
 header{display: none; }
 header .HeaderCenter{background: transparent;position: absolute;
 border-radius: 4px;top: 15px;left: 0%;right: 0%;bottom: 0; margin:0px 0px 0px 0px;
@@ -381,7 +382,7 @@ ul>li>a:after {
     -webkit-transition: 0.2s width;
     transition: 0.2s width;
 }
-.IMG0, .IMG,.IMG1,.IMG2,.IMG3,.IMG4,.IMG5,.IMG6,.IMG7,.IMG8,.IMG9,.IMG10,.IMG11,.IMG12,.IMG13,.IMG14,.IMG15,.IMG16{margin-top: 15px;}
+.IMG0, .IMG,.IMG1,.IMG2,.IMG3,.IMG4,.IMG5,.IMG6,.IMG7,.IMG8,.IMG9,.IMG10,.IMG11,.IMG12,.IMG13,.IMG14,.IMG15,.IMG16,.IMG17,.IMG18,.IMG19,.IMG20{margin-top: 15px;}
 .Work .WorkCenter .tab-content .tab-pane a{text-decoration: none;}
 .Work .WorkCenter  img{border-radius: 2%;box-shadow: 12px 7px 20px 0px #b1afaf;}
 .Work .WorkCenter .HOVER:hover{/*opacity: 0.7;*/box-shadow:8px 9px 20px 10px #b9b6b6 !important; }
