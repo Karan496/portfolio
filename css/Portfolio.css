@@ -561,7 +561,9 @@ footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{width
 .MODEL{display: none;}
 }
 @media (min-width: 320px) and (max-width: 767px) {
-    footer .spread-icons .Counter{margin-right: auto!important;}
+    footer .spread-icons .Counter{justify-content: center!important;
+    align-items: center!important;
+    width: 100%;}
 .JobBox .Jobs .timeline:before{left: calc(10% - 2px);}
 .NavBar{display: none;}
 .CircleBox .Bars {left: 1%;top: 3px;}
