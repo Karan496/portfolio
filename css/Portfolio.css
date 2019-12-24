@@ -561,6 +561,7 @@ footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{width
 .MODEL{display: none;}
 }
 @media (min-width: 320px) and (max-width: 767px) {
+    footer .spread-icons .Counter{margin-right: auto!important;}
 .JobBox .Jobs .timeline:before{left: calc(10% - 2px);}
 .NavBar{display: none;}
 .CircleBox .Bars {left: 1%;top: 3px;}
@@ -583,7 +584,7 @@ footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{width
 .Work {padding: 60px 0;}
 .Work .WorkBox .Self, footer .FooterBox .Self {margin-right: 8px;}
 footer .FooterBox .FooterContent p, .Footer .FooterBox p, .Work .WorkBox p{font-size: 11px;width: 22em;}
-.Work .WorkCenter ul li{margin-left: 0px;width: 100%;margin-bottom: 15px;}
+.Work .WorkCenter ul li{margin-left: 0px;width: 100%;margin-bottom: 10px;}
 .Work .WorkCenter ul .Wordpress{margin-bottom: 0px!important;}
 .Work .WorkCenter .tab-pane{margin-top: 20px;}
 .Work .WorkCenter h2{margin-bottom: 10px;font-size: 18px;}
@@ -603,7 +604,7 @@ footer .spread-icons p br{display: none;}
  .SM{margin-left: 0px!important;margin-top: 7px!important; display: block!important;}
 .JobBox .Jobs .timeline .timeline-event .timeline-event-content{float: left;margin-left: 60px;}
 .Work .WorkCenter ul li {margin-left: inherit;width: unset;}
-.Work .WorkCenter ul li a{margin-left: 15px!important;}
+.Work .WorkCenter ul li a{margin-left: 5px!important;font-size: 12px;padding: 0.5rem 1.0rem;border-radius: 1rem;}
 .Work .WorkCenter ul .Wordpress {margin-bottom: auto!important;}
 .JobBox .Jobs .timeline .timeline-event .timeline-event-point{left: calc(10% - 27px)!important;}
 .Circle2{display: none!important; top:87%;left: 65%;display: none; height: 30px; width: 30px; opacity: 0.3;}
